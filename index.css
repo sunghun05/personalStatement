@@ -16,11 +16,12 @@ li > a {
     text-align: center;
     width: 300px;
 }
+.menu:hover a {color: white;}
 .menu:hover {
     font-weight: bolder;
     background-color: rgb(156, 156, 156);
     border-radius: 0.5rem;
-    color: white;
+
 }
 .parent {
     display: flex;
@@ -112,10 +113,8 @@ p {
 
 
 .article {
-    display: inline-block;
-    /* margin: 2% 2% 2% 2%; */
-    margin: auto;
-    padding: 0% 0% 20% 1%;
+    margin: 20% 2% 5% 5%;
+    padding: 0% 0% 0% 1%;
     width: 50%;
 }
 .article1 {
@@ -139,14 +138,17 @@ li {
     list-style: square;
 }
 .profile {
-    display: inline-block;
-    /* width: 15%; */
     background-color: wheat;
     margin-left: 2%;
 }
 #pname {
     text-align: center;
     border-bottom: 1px solid white;
+}
+#box {
+    width: auto;
+    display: flex;
+    flex-direction: row;
 }
 td {
     padding: 1%;
@@ -179,7 +181,6 @@ td {
     text-align: right;    
     list-style: none;
     display: inline-block;
-    /* flex-direction: row; */
 }
 #rigthin {
     margin: -20%;
