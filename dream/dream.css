@@ -1,112 +1,123 @@
 /*top bar*/
+body{margin:0;background-color: #DDE6ED;}
+/* 네비게이션 바 */
 .menu{
-    font-size: x-large;
-    color: rgb(95, 95, 95);
-    text-decoration: none;
+    color: #9DB2BF;
     text-align: center;
-    display: inline-block;
-    padding: 20px 40px 20px 40px;
     border-width: 2px;
-    margin: 0px;
     box-sizing: border-box;
+    width: 120px;
+    padding: 10px 8px 10px 8px;
 }
-li > a {
-    color: black;
+.menu > a {
+    color: #27374D;
     text-decoration: none;
     text-align: center;
     width: 300px;
 }
-.menu:hover a {color: white;}
+/* nav의 바탕색, 크기, 마진을 지정 */
+#menubar {
+    background-color: #9DB2BF;
+    width: 1180px;
+    margin-top: 0%;
+    padding-left: 0%; margin-top: 0%; margin-bottom: 0%; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+/* #menubar > div {text-align: center; display: inline-block;} */
+/* 네비게이션 바에 마우스를 올렸을때의 효과 */
+.menu:hover a {color: #DDE6ED;}
 .menu:hover {
     font-weight: bolder;
     background-color: rgb(156, 156, 156);
+    border-radius: 1.5rem;
+}
+/* 네비게이션 바에서 메인 페이지를 독립된 방법으로 표시 */
+#home > a {
+    box-sizing: border-box;
+    padding: 20px 40px 20px 40px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: xx-large;
+    /* background-color: #526D82; */
+    color: #27374D;
     border-radius: 0.5rem;
-    color: white;
 }
-.parent {
-    display: flex;
+/* div에 flex를 적용하여 레이아웃을 구성하기 위해 vessl -> main -> parent -> sidebar, layout으로 구성 */
+#vessel {
+    width: 1300px;
+    box-sizing: border-box;
+    background-color: #DDE6ED;
+    padding-bottom: 1%;
+    margin: 0 auto;
+    justify-content: center;
 }
+#main {margin: 0% 5% 0% 5%;background-color: #f5fbff;
+        width: 1180px;}
 .layout {
-    width: 80%;
-    height: 100%;
+    width: 1200px;height: 100%;
+    border-left:2px solid #526D82;
+    padding-bottom: 3%;
+    margin-left: 200px;
 }
+.parent {display: flex;}
+/* 본문의 제목을 나타내는 div의 공통된 속성을 단일화 */
 .block {
     width: 90%;
     height: 30px;
     padding: 30px;
     margin: 20px;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #526D82
 }
-#home {
-    background-color: gray;
-    color: black;
-    border-radius: 0.5rem;
-}
-#vessel {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: rgb(238, 238, 238);
-    padding-bottom: 1%;
-    margin-top: 0%;
-}
-#main {
-    margin: 0% 5% 0% 5%;
-    background-color: white;
-}
-#head {
-    text-align: center;
-    text-decoration-line: overline;
-    color: black;
-}
-#menubar {
-    background-color: rgb(200, 200, 200);
-    width: 100%;
-    margin-top: 0%;
-}
-#menubar > div {
-    text-align: center;
-    display: inline-block;
-}
-
+/* 왼쪽의 목차 부분을 표시하기 위함 */
 #sidebar {
+    position: fixed;
     display: inline-block;
-    /* display: flex; */
-    border-right-color: gray;
-    border-right-width: 2px;
-    border-right-style: solid;
-    width: 20%;
-    height: 1000px;
+    width: 120px;
+    height: 100%;
     padding: 0% 2% 30% 1%;
     margin: 0% 1% 1% 1%;
 }
-#index > li > a {
-    color: rgb(213, 177, 1);
-    text-decoration: underline;
-}
-ul#index {
-    margin-left: 15%;
+li {font-size: large;list-style: square;}
+#index > li > a {color: #526D82;text-decoration: underline;}
+ul#index {margin-left: 15%;}
+#index {padding: 1% 3% 3% 3%;}
 
+/* hr태그의 마진을 제거 */
+#hr1 {color: #27374D;width: 100%;}
+hr {margin: 0%;}
+
+p {font-size: larger;font-family: 나눔고딕,Nanum Gothic,돋움,Dotum;}
+.nowin {border-radius: 0.5rem;}
+/*article*/
+
+/* 본문을 적는 공간을 div로 지정하고 그것의 속성을 정함 */
+.article {
+    margin: 20% 2% 5% 5%;
+    padding: 0% 0% 0% 1%;
+    width: 50%;
 }
-#index {
-    padding: 1% 3% 3% 3%;
+.article1 {
+    display: inline-block;
+    margin: 2% 2% 2% 5%;
+    padding: 0% 0% 2% 3%;
+    width: 70%;
 }
-#hr1 {
-    color: black;
-    width: 100%;
+.hobbybox > p {
+    text-align: center;
+    border-bottom: 2px solid #DDE6ED;
 }
-hr {
-    margin: 0%;
+#box {
+    margin: 0 auto;
+    justify-content: center;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 1% 5% 0% 4%;
 }
-h1#head {
-    margin: 5% 0% 5% 0%;
-    font-size: xxx-large;
-    }
-p {
-    font-size: larger;
-}
-.nowin {
-    border-radius: 0.5rem;
-}
+
 
 /*article*/
 
@@ -142,7 +153,7 @@ td {
 
 
 .footer {
-    background-color: gray;
+    background-color: #27374D;
     padding: 1%;
     margin: 0 auto;
     display: flex;
@@ -160,6 +171,8 @@ td {
 }
 #information1 {
     display: inline-block;
+    color: #DDE6ED;
+    font-size: x-small;
 }
 #link {
     padding-top: 7%;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal statement</title>
+    <title>my club</title>
     <style>@import url(club.css);</style>
 </head>
 <body>
@@ -13,15 +13,15 @@
 
         <div id="main">
 
-            <div>
+            <div style="position:fixed">
                 <nav id="menubar">
-                    <ul style="padding-left: 0%; margin-top: 0%; margin-bottom: 0%;">
-                        <li class="menu" id="home"><a href="../index.html">INTRODUCE</a></li>
-                        <li class="menu"><a href="../hobby/hobby.html">HOBBY</a></li>
-                        <li class="menu"><a href="../dream/dream.html">DREAM</a></li>
-                        <li class="menu"><a href="club.html">CLUB</a></li>
-                        <li class="menu"><a href="../timetable/timetable.html">TIMETABLE</a></li>
-                        <li class="menu"><a href="../report/report.html">REPORT</a></li>
+                    <ul id="menubar">
+                        <div id="home"><a href="../index.html">INTRODUCE</a></div>
+                        <div class="menu"><a href="../hobby/hobby.html">HOBBY</a></div>
+                        <div class="menu"><a href="../dream/dream.html">DREAM</a></div>
+                        <div class="menu"><a href="club.html">CLUB</a></div>
+                        <div class="menu"><a href="../timetable/timetable.html">TIMETABLE</a></div>
+                        <div class="menu"><a href="../report/report.html">REPORT</a></div>
 
                     </ul>
                 </nav>
@@ -29,24 +29,34 @@
 
             <hr id="hr1">
 
-            <div class="parent">
+            <div class="parent" style="margin-top: 80px">
                 <div id="sidebar">
                     <h2><div id="index">INDEX</div></h2>
                     <ul id="index">
-                        <li><a href="#timetable">나의 시간표</a></li>
+                        <li><a href="#clubin">동아리 소개</a></li>
                         <li><a href="#rooms">강의실 목록</a></li>
                     </ul>
                 </div>
 
                 <div class="layout">
-                    <h1><div class="block" id="timetable">나의 시간표</div></h1>
+                    <h1><div class="block" id="clubin">동아리 소개</div></h1>
                     <!-- article -->
                     <div id="box">
                         <div class="article">
                             <p>
-                                
+                                제가 속한 동아리는 순천향대학교 thumb(야구동아리) 입니다.
+                                인원은 총 88명이며 현재도 꾸준히 신입부원을 상시 모집중입니다.
+                                1,2,3,4학년 모두가 섞여있으며 서로 훈련을 통하여 친해지기도 합니다.
+                                요즘은 리그가 진행중이며 타 학교들과 경기를 활발하게 진행중입니다.
+                                훈현 일정은 매주 월요일, 수요일 17시이고 변동될 수 있습니다.
                             </p>
                         </div>
+
+                        <div id="imgbox">
+                            <div id="img"><img src="../sources/thumb.jpg" width="200px" height="150px"></div>
+                            <div id="description">^^ 순천향대학교 야구동아리 "THUMB" ^^</div>
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal statement</title>
+    <title>my timetable</title>
     <style>@import url(timetable.css);</style>
 </head>
 <body>
@@ -13,15 +13,15 @@
 
         <div id="main">
 
-            <div>
+            <div style="position:fixed">
                 <nav id="menubar">
-                    <ul style="padding-left: 0%; margin-top: 0%; margin-bottom: 0%;">
-                        <li class="menu" id="home"><a href="../index.html">INTRODUCE</a></li>
-                        <li class="menu"><a href="../hobby/hobby.html">HOBBY</a></li>
-                        <li class="menu"><a href="../dream/dream.html">DREAM</a></li>
-                        <li class="menu"><a href="../club/club.html">CLUB</a></li>
-                        <li class="menu"><a href="timetable.html">TIMETABLE</a></li>
-                        <li class="menu"><a href="../report/report.html">REPORT</a></li>
+                    <ul id="menubar">
+                        <div id="home"><a href="../index.html">INTRODUCE</a></div>
+                        <div class="menu"><a href="../hobby/hobby.html">HOBBY</a></div>
+                        <div class="menu"><a href="../dream/dream.html">DREAM</a></div>
+                        <div class="menu"><a href="../club/club.html">CLUB</a></div>
+                        <div class="menu"><a href="timetable.html">TIMETABLE</a></div>
+                        <div class="menu"><a href="../report/report.html">REPORT</a></div>
 
                     </ul>
                 </nav>
@@ -29,12 +29,11 @@
 
             <hr id="hr1">
 
-            <div class="parent">
+            <div class="parent" style="margin-top: 80px">
                 <div id="sidebar">
                     <h2><div id="index">INDEX</div></h2>
                     <ul id="index">
                         <li><a href="#timetable">나의 시간표</a></li>
-                        <li><a href="#rooms">강의실 목록</a></li>
                     </ul>
                 </div>
 
@@ -42,11 +41,28 @@
                     <h1><div class="block" id="timetable">나의 시간표</div></h1>
                     <!-- article -->
                     <div id="box">
-                        <div class="article">
-                            <p>
-                                
-                            </p>
-                        </div>
+                            <table style="border: 3px dashed black;">
+                                <tr><td id="blank"></td>     <td class="top">월</td>       <td class="top">화</td>     <td class="top">수</td>               <td class="top">목</td>             <td class="top">금</td></tr>
+                                <tr><td id="left">9:00</td>    <td rowspan="6" id="class"><div id="container">웹 프로그래밍<div id="child">강의실:M503</div><div id="child1">성낙준교수님</div></div></td>   <td rowspan="3" id="class"><div id="container">컴퓨터개론<div id="child">강의실:M503</div><div id="child1">김수현교수님</div></div></td>   <td></td>  <td rowspan="4" id="class"><div id="container">글쓰기<div id="child">강의실:U636</div><div id="child1">김현지교수님</div></div></td>  <td></td></tr>
+                                <tr><td id="left">9:30</td>                                                                     <td></td>                                                                  <td></td></tr>
+                                <tr><td id="left">10:00</td>                                                                    <td></td>                                                                  <td></td></tr>
+                                <tr><td id="left">10:30</td>                                     <td></td>                      <td></td>                                                                  <td></td></tr>
+                                <tr><td id="left">11:00</td>                                     <td></td>                      <td rowspan="6" id="class"><div id="container">파이썬프로그래밍<div id="child">강의실:M503</div><div id="child1">성낙준교수님</div></div></td>     <td></td>  <td></td></tr>
+                                <tr><td id="left">11:30</td>                                       <td></td>                                                           <td></td>                            <td></td></tr>
+                                <tr><td id="left">12:00</td>   <td></td>                           <td></td>                                                          <td></td>                            <td></td></tr>
+                                <tr><td id="left">12:30</td>   <td></td>                          <td></td>                                                           <td></td>                             <td></td></tr>
+                                <tr><td id="left">13:00</td>   <td></td>                          <td></td>                                                           <td></td>                              <td></td></tr>
+                                <tr><td id="left">13:30</td>   <td></td>                          <td></td>                                                           <td></td>                       <td rowspan="6" id="class"><div id="container">컴퓨터코딩과문제해결<div id="child">강의실:6104</div><div id="child1">최경근교수님</div></div></td></tr>
+                                <tr><td id="left">14:00</td>   <td></td>                          <td></td>                     <td rowspan="4" id="class"><div id="container">파이썬프로그래밍실습<div id="child">강의실:M518</div><div id="child1">김성엽교수님</div></div></td>   <td rowspan="6" id="class"><div id="container">일반수학<div id="child">강의실:M503</div><div id="child1">이용훈교수님</div></div></td>  </tr>
+                                <tr><td id="left">14:30</td>   <td></td>                          <td></td>                                                                                                                           </tr>
+                                <tr><td id="left">15:00</td>   <td rowspan="3" id="class"><div id="container">컴퓨터개론<div id="child">강의실:M503</div><div id="child1">김수현교수님</div></div></td>        <td></td>                       </tr>
+                                <tr><td id="left">15:30</td>                                      <td></td>                                                                                                                           </tr>
+                                <tr><td id="left">16:00</td>                                      <td></td>                     <td></td>                                                                                             </tr>
+                                <tr><td id="left">16:30</td>   <td></td>                          <td></td>                     <td></td>                                                                     <td></td></tr>
+                                <tr><td id="left">17:00</td>   <td></td>                   <td rowspan="3" id="class"><div id="container">자기개발과전공탐색<div id="child">강의실:M503</div><div id="child1">강미선교수님</div></div></td>    <td></td>                               <td></td>                           <td></td></tr>
+                                <tr><td id="left">17:30</td>   <td></td>                                                           <td></td>                              <td></td>                             <td></td></tr>
+                                <tr><td id="left">18:00</td>   <td></td>                                                          <td></td>                               <td></td>                               <td></td></tr>
+                            </table>
                     </div>
                 </div>
             </div>
