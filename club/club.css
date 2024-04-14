@@ -140,10 +140,10 @@ li {
     list-style: square;
 }
 #imgbox {
-    margin-top: 10%;
-    margin-left: 5%;
-    width: 205px;
-    height: 180px;
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 307px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     background-color: lightgray;
