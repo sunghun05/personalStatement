@@ -162,10 +162,18 @@ td {
 #class {
     background-color: #DDE6ED;
 }
-#class:hover {background-color: #9DB2BF;}
+#class:hover {background-color: #9DB2BF;color:white;}
 .top {
     background-color: #27374D;
     color: #DDE6ED;
+}
+#left:hover {
+    background-color: #27374D;
+    color: white;
+}
+.top:hover {
+    background-color: #f5fbff;
+    color: #27374D;
 }
 #left {
     background-color: #9DB2BF;
@@ -189,8 +197,8 @@ td {
     color:#27374D;
     background-color:#DDE6ED;
 }
-#container:hover #child{display: block;}
-#container:hover #child1{display: block;}
+#class:hover #child{display: block;}
+#class:hover #child1{display: block;}
 
 /* footer */
 
